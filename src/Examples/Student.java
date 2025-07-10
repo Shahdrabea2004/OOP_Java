@@ -1,11 +1,13 @@
+package Examples;
+
 public class Student {
     private String id;
-    private static int no=0;
     private String name;
-    static String college="IT";
     private String password;
     private boolean loggedIn;
+    private static int no=0;
     private static int minPassword=6;
+    private static String college="IT";
     public Student(String name,String password) {
         if (!validatePassword(password)) {
             System.out.println("Warning: Weak password!");
@@ -30,7 +32,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Examples.Student{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", college='" + college + '\'' +
