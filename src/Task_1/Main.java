@@ -1,6 +1,15 @@
 package Task_1;
 
 public class Main {
+    /*
+   ███████╗██╗  ██╗██████╗  █████╗
+   ██╔════╝██║  ██║██╔══██╗██╔══██╗
+   ███████╗███████║██████╔╝███████║
+   ╚════██║██╔══██║██╔══██╗██╔══██║
+   ███████║██║  ██║██║  ██║██║  ██║
+   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+               SHRA
+   */
     public static void main(String []args){
         Courses courses1=new Courses("Math");
         Courses courses2=new Courses("C++");
