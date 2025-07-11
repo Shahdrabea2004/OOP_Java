@@ -27,3 +27,8 @@ public class Main {
 
     }
 }
+/*
+        git add .
+        git commit -m "update Task_1"
+        git push
+ */
