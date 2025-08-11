@@ -13,6 +13,14 @@ public class SalariedEmployee extends Employee{
         return super.getSalary()+bouns;
     }
 
+    @Override
+    public void print1(){
+        System.out.println("Salaried Employee");
+    }
+
+
+    public SalariedEmployee() {
+    }
 
     public  static  void print(){
         System.out.println("I static method test override in sub_class😒");

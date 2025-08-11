@@ -4,6 +4,13 @@ public class Employee {
     private  String name, address,department,email;
     private float salary;
 
+    public Employee() {
+    }
+
+    public void print1(){
+        System.out.println("Employee");
+    }
+
     public Employee(String name, String address, String department, String email, float salary) {
         this.name = name;
         this.address = address;

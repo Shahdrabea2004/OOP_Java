@@ -1,6 +1,13 @@
 package Examples4;
 
 public class Main {
+    static float p(Employee e1){
+        return e1.getSalary();
+    }
+
+    static void p2(Employee e1){
+        e1.print1();
+    }
     public static void main(String[]args){
         Employee employee=new Employee("shahd","fayuom","backend","sha@",50000);
         System.out.println(employee.getSalary());
@@ -19,6 +26,18 @@ public class Main {
         System.out.println(objCasting.getSalary());//run in SalariedEmployee
 
         objCasting.print();
+
+        System.out.println(p(new SalariedEmployee("shahd","fayuom","backend","sha@",50000,10000)));
+
+
+        Employee [] refArray=new Employee[]{new Employee(),
+                                             new SalariedEmployee(),
+                                             new DailyEmployee(),
+                                             new HourlyEmployee()};
+
+        for(Employee e:refArray){
+            p2(e);
+        }
     }
 }
 
