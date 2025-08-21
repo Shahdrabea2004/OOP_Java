@@ -1,6 +1,11 @@
 package Examples7;
 import java.util.*;
-public class Main {
+public class Main extends ArrayList {
+    public Main(ArrayList<Integer> list) {
+        super(list);
+        //or this.addAll(list);
+    }
+
     public static void main(String[] args){
         Scanner input=new Scanner(System.in);
         int n=input.nextInt();
@@ -21,9 +26,9 @@ public class Main {
 
         list.addAll(5,Arrays.asList(180,963));
 
-        for(Integer num:list){
-            System.out.print(num+" ");
-        }
+//        for(Integer num:list){
+//            System.out.print(num+" ");
+//        }
 
         System.out.println();
 
@@ -35,8 +40,33 @@ public class Main {
         list2=(ArrayList) list.clone();
         System.out.println(list2);
 
-        ArrayList<Integer>list3=new ArrayList<>(list2);
+        List<Integer>list3=new ArrayList<>(list2);
+//        System.out.println(list2);
+
+        list3.remove(2);
+        list3.remove(Integer.valueOf(180));
+        list3.remove((new Integer(10)));
+        list3.remove((Integer) 66);
+
+        list3.removeAll(Arrays.asList(5));
+        list3.removeAll(Arrays.asList(6,20));
+        list3.removeAll(Collections.singleton(21));
+        list2.removeAll(list3);
+        System.out.println(list3);
         System.out.println(list2);
+
+
+        Main arr=new Main(list);
+        arr.removeRange(0,5);
+        System.out.println(arr);
+
+        list2.removeIf(num->num%2==0);
+        System.out.println(list2);
+
+        ArrayList listDiff =new ArrayList(Arrays.asList("shahd",21,true,"*",50000000000.5,"ohhhhhh"));
+        System.out.println(listDiff);
+
+
 
 
 
