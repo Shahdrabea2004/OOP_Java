@@ -1,49 +1,50 @@
 package Examples7;
+
 import java.util.*;
+
 public class Main extends ArrayList {
-    static Scanner input=new Scanner(System.in);
-    static public void Example1(){
-        int n= input.nextInt();
-        ArrayList<Integer> Distinct_list =new ArrayList<>();
-        for(int i=0;i<n;i++){
-            int x=input.nextInt();
-            if(!Distinct_list.contains(x)) Distinct_list.add(x);
+    static Scanner input = new Scanner(System.in);
+
+    static public void Example1() {
+        int n = input.nextInt();
+        ArrayList<Integer> Distinct_list = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            int x = input.nextInt();
+            if (!Distinct_list.contains(x)) Distinct_list.add(x);
         }
         System.out.println(Distinct_list);
     }
 
-    static public void Exaample2(){
+    static public void Exaample2() {
         //int n= input.nextInt();
-        ArrayList<Integer> list =new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         System.out.println("1.Add Element");
         System.out.println("2.Remove Element");
         System.out.println("3.Print Elements");
         System.out.println("4.Exit");
-        while(true){
-            int x= input.nextInt();
-            if(x==1){
-                int a=input.nextInt();
+        while (true) {
+            int x = input.nextInt();
+            if (x == 1) {
+                int a = input.nextInt();
                 list.add(a);
-            }
-            else if(x==2){
-                int a=input.nextInt();
+            } else if (x == 2) {
+                int a = input.nextInt();
                 list.remove((Integer) a);
-            }
-            else if(x==3){
+            } else if (x == 3) {
                 System.out.println(list);
-            }
-            else{
+            } else {
                 break;
             }
 
         }
     }
+
     public Main(ArrayList<Integer> list) {
         super(list);
         //or this.addAll(list);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
 ////        int n=input.nextInt();
 //        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(1,2,3,4,5));
@@ -124,16 +125,11 @@ public class Main extends ArrayList {
 //        list4.forEach(el-> System.out.print(el+"-"));
 
 
-
         //Example1
         //Example1();
 
-         //Example2
+        //Example2
         Exaample2();
-
-
-
-
 
 
     }
