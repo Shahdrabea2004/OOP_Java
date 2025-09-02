@@ -1,6 +1,6 @@
 package Examples9;
 
-public class CarV1 implements SelfDrivable,Movable {
+public class CarV1 implements MarkerInterface, SelfDrivable,Movable {
     private int x,y;
     private int numberOfPassengers;
 
