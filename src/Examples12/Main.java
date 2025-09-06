@@ -2,7 +2,8 @@ package Examples12;
 
 public enum Main {
     ONE,TWO;
-    public static void main(String []Shahd){
+
+    public static void main(String[] Shahd) {
         try {
             int arr[] = new int[]{1, 2, 3};
             System.out.println(arr[5]);
