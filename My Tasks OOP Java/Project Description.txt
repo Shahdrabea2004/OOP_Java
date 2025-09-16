@@ -1,0 +1,1 @@
+-This folder contains tasks I completed when I started learning OOP using Java.
